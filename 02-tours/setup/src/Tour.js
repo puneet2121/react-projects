@@ -12,7 +12,7 @@ const Tour = (props) => {
         </div>
         <p>{readMore ? props.info : `${props.info.substring(0,200)}...`} </p>
         <button onClick={() => setReadMore(!readMore)}>{readMore ? 'show less': 'Read More' }</button>
-        <button className="delete-btn">Not interested</button>
+        <button className="delete-btn" onClick={() => props.removeTours(props.id)} >Not interested</button>
       </footer>
     </article>
   );
