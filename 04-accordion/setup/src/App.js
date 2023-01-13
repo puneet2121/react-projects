@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import data from "./data";
 import SingleQuestion from "./Question";
 function App() {
-  const [question, setQuestions] = useState(data);
+  const [questions, setQuestions] = useState(data);
   return (
     <main>
       
@@ -10,7 +10,7 @@ function App() {
         <h3>questions </h3>
         <section className="info">
           {
-            question.map(() => {
+            questions.map((question) => {
               return <SingleQuestion key={question.id} {...question}/>
             })
           }
