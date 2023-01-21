@@ -8,6 +8,12 @@ const Categories = (props) => {
     <button className='filter-btn' onClick={() => props.filterItems('breakfast')}>
       breakfast
     </button>
+    <button className='filter-btn' onClick={() => props.filterItems('lunch')}>
+      lunch
+    </button>
+    <button className='filter-btn' onClick={() => props.filterItems('shakes')}>
+    shakes
+    </button>
   </div>
 };
 
